@@ -1,0 +1,82 @@
+.navigation
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	height: $navigation-height
+	background-color: $navigation-bg-color
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .1)
+
+	&__title
+		text-decoration: none
+		color: #fff
+		background-color: #3b3a52
+		line-height: $navigation-height
+		font-weight: 900
+		font-size: 15px
+		letter-spacing: 2.1px
+		display: block
+		width: $sidebar-width
+		padding-left: 15px
+
+	&__search
+		width: 420px
+		line-height: $navigation-height
+		padding: 0 20px
+
+		&-box
+			border: none
+			width: 320px
+			padding: 15px
+
+			&:focus
+				outline: none
+
+			&::placeholder
+				color: #4D4F5C
+
+			&::-webkit-input-placeholder
+				color: #4D4F5C
+
+		img
+			width: 16px
+			height: 16px
+			margin-bottom: -4px
+
+	&__menu
+		list-style-type: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row-reverse
+		flex: 1
+		padding: 20px
+
+		&-item
+			line-height: #{$navigation-height - 40px}
+			margin: 0 10px
+			padding: 5px 6px
+
+			img
+				width: 16px
+				height: 16px
+				display: block
+
+			&__user-profile
+				padding: 0 20px
+				border-left: 1px solid #EBEBF2
+
+				&__uname
+					font-size: 15px
+					color: #43425D
+
+				& img
+					width: 36px
+					height: 36px
+					display: block
+					float: right
+					margin-left: 15px
+					margin-top: -4px

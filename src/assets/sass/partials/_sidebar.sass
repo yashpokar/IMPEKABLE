@@ -1,0 +1,37 @@
+.sidebar
+	background-color: $sidebar-bg-color
+	width: $sidebar-width
+	position: fixed
+	bottom: 0
+	top: $navigation-height
+
+	&__menu
+		list-style-type: none
+
+		&-item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			font-size: 15px
+			margin: 3px 0
+
+			&.is-active &__link
+				background-color: #3c3b53
+				border-color: #a3a0fb
+
+			&__icon
+				width: 16px
+				height: 16px
+				margin-right: 10px
+				display: block
+				float: left
+
+			&__link
+				text-decoration: none
+				color: #fff
+				display: block
+				width: 100%
+				padding: 15px
+				border-left: 4px solid transparent
